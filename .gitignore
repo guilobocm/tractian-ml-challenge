@@ -88,5 +88,6 @@ htmlcov/
 
 # Output files (keep structure but ignore actual scraped data)
 output/products_*.json
-output/assets/*/
+output/BALDOR_*.json
+output/assets/BALDOR_*/
 !output/assets/.gitkeep

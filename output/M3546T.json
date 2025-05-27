@@ -1,0 +1,45 @@
+{
+  "product_id": "M3546T",
+  "name": "3 HP General Purpose Motor - 1800 RPM",
+  "description": "TEFC motor designed for general purpose applications. Features Class F insulation system with Class B temperature rise.",
+  "specs": {
+    "Horsepower": "3 HP",
+    "RPM": "1800",
+    "Voltage": "208-230/460V",
+    "Frame": "182T",
+    "Enclosure": "TEFC",
+    "Efficiency": "89.5%"
+  },
+  "bom": [
+    {
+      "part_number": "ST-001",
+      "description": "Main stator with windings",
+      "quantity": 1
+    },
+    {
+      "part_number": "RT-001",
+      "description": "Cast iron rotor assembly",
+      "quantity": 1
+    },
+    {
+      "part_number": "BR-001",
+      "description": "Ball bearing 6206ZZ",
+      "quantity": 2
+    },
+    {
+      "part_number": "FN-001",
+      "description": "External cooling fan",
+      "quantity": 1
+    }
+  ],
+  "assets": {
+    "manual": "assets/M3546T/manual.pdf",
+    "datasheet": "assets/M3546T/datasheet.pdf",
+    "cad_dwg": "assets/M3546T/cad_dwg.dwg",
+    "cad_step": "assets/M3546T/cad_step.step",
+    "image_main": "assets/M3546T/image_main.jpg",
+    "image_dimensions": "assets/M3546T/image_dimensions.jpg",
+    "certificate_ul": "assets/M3546T/certificate_ul.pdf",
+    "wiring_diagram": "assets/M3546T/wiring_diagram.pdf"
+  }
+}

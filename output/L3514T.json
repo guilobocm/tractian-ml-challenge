@@ -1,0 +1,35 @@
+{
+  "product_id": "L3514T",
+  "name": "1 HP Single Phase Motor - 1800 RPM",
+  "description": "Capacitor start, capacitor run motor for commercial and light industrial applications.",
+  "specs": {
+    "Horsepower": "1 HP",
+    "RPM": "1800",
+    "Voltage": "115/208-230V",
+    "Frame": "143T",
+    "Enclosure": "ODP",
+    "Starting": "Capacitor Start/Run"
+  },
+  "bom": [
+    {
+      "part_number": "ST-002",
+      "description": "Single phase stator",
+      "quantity": 1
+    },
+    {
+      "part_number": "RT-002",
+      "description": "Aluminum rotor",
+      "quantity": 1
+    },
+    {
+      "part_number": "CP-001",
+      "description": "Start capacitor 88-108 μF",
+      "quantity": 1
+    }
+  ],
+  "assets": {
+    "manual": "assets/L3514T/manual.pdf",
+    "datasheet": "assets/L3514T/datasheet.pdf",
+    "image_main": "assets/L3514T/image_main.jpg"
+  }
+}

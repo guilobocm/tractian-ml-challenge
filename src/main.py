@@ -20,7 +20,7 @@ logging.basicConfig(
 )
 
 BASE_URL = 'https://www.baldor.com/catalog'
-LIMIT = 12  # Entre 10-15 produtos conforme especificado
+LIMIT = 10  # 10 produtos conforme solicitado
 OUTPUT_DIR = 'output'
 ASSETS_DIR = os.path.join(OUTPUT_DIR, 'assets')
 

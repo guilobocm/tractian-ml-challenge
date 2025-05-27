@@ -1,0 +1,37 @@
+{
+  "product_id": "M2394T",
+  "name": "25 HP Three Phase Motor - 1800 RPM",
+  "description": "Premium efficiency motor for demanding industrial applications.",
+  "specs": {
+    "Horsepower": "25 HP",
+    "RPM": "1800",
+    "Voltage": "208-230/460V",
+    "Frame": "284T",
+    "Enclosure": "TEFC",
+    "Efficiency": "93.0%"
+  },
+  "bom": [
+    {
+      "part_number": "ST-009",
+      "description": "Large frame stator",
+      "quantity": 1
+    },
+    {
+      "part_number": "RT-009",
+      "description": "Heavy duty rotor assembly",
+      "quantity": 1
+    },
+    {
+      "part_number": "BR-004",
+      "description": "Ball bearing 6209ZZ",
+      "quantity": 2
+    }
+  ],
+  "assets": {
+    "manual": "assets/M2394T/manual.pdf",
+    "datasheet": "assets/M2394T/datasheet.pdf",
+    "cad_dwg": "assets/M2394T/cad_dwg.dwg",
+    "image_main": "assets/M2394T/image_main.jpg",
+    "certificate": "assets/M2394T/certificate.pdf"
+  }
+}

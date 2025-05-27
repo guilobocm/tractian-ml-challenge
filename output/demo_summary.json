@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-05-27T14:40:00Z",
+  "total_products": 10,
+  "successful_products": 10,
+  "failed_products": 0,
+  "demo_mode": true,
+  "products_generated": [
+    "M3546T",
+    "L3514T",
+    "M2513T",
+    "VM3554T",
+    "L1408T",
+    "M3711T",
+    "VM3615T",
+    "L1510T",
+    "M2394T",
+    "VM3709T"
+  ],
+  "asset_types": [
+    "manual",
+    "datasheet",
+    "cad_dwg",
+    "cad_step",
+    "image_main",
+    "certificate",
+    "wiring_diagram"
+  ],
+  "notes": "Demo data generated for TRACTIAN challenge submission"
+}

@@ -1,0 +1,36 @@
+{
+  "product_id": "M3711T",
+  "name": "7.5 HP Three Phase Motor - 1800 RPM",
+  "description": "High efficiency motor for industrial applications requiring reliable continuous operation.",
+  "specs": {
+    "Horsepower": "7.5 HP",
+    "RPM": "1800",
+    "Voltage": "208-230/460V",
+    "Frame": "213T",
+    "Enclosure": "TEFC",
+    "Efficiency": "91.0%"
+  },
+  "bom": [
+    {
+      "part_number": "ST-006",
+      "description": "High power stator",
+      "quantity": 1
+    },
+    {
+      "part_number": "RT-006",
+      "description": "Heavy duty rotor",
+      "quantity": 1
+    },
+    {
+      "part_number": "BR-003",
+      "description": "Ball bearing 6207ZZ",
+      "quantity": 2
+    }
+  ],
+  "assets": {
+    "manual": "assets/M3711T/manual.pdf",
+    "datasheet": "assets/M3711T/datasheet.pdf",
+    "cad_dwg": "assets/M3711T/cad_dwg.dwg",
+    "image_main": "assets/M3711T/image_main.jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "product_id": "L1408T",
+  "name": "1/2 HP Single Phase Motor - 1800 RPM",
+  "description": "Compact motor ideal for pumps, fans and light duty applications.",
+  "specs": {
+    "Horsepower": "0.5 HP",
+    "RPM": "1800",
+    "Voltage": "115/208-230V",
+    "Frame": "56",
+    "Enclosure": "ODP"
+  },
+  "bom": [
+    {
+      "part_number": "ST-005",
+      "description": "Compact stator",
+      "quantity": 1
+    },
+    {
+      "part_number": "RT-005",
+      "description": "Small rotor assembly",
+      "quantity": 1
+    }
+  ],
+  "assets": {
+    "manual": "assets/L1408T/manual.pdf",
+    "image_main": "assets/L1408T/image_main.jpg"
+  }
+}

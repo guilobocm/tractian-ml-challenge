@@ -119,9 +119,11 @@ python main.py
 The scraper is configured to extract 12 products (within the 10-15 range specified in the challenge). You can modify the `LIMIT` variable in `main.py` to adjust this number.
 
 ### Output
-- **JSON files**: `output/products_{timestamp}.json` - Structured product data
-- **Assets**: `output/assets/PRODUCT_ID/` - Downloaded files organized by product
+- **JSON files**: Generated as `output/PRODUCT_ID.json` - Structured product data
+- **Assets**: Downloaded to `output/assets/PRODUCT_ID/` - Organized by product
 - **Logs**: Console output with detailed progress and error information
+
+**Note**: As per TRACTIAN instructions, extracted data files are not included in this repository. They are provided separately as a compressed file in the submission email.
 
 ### Testes
 ```bash
