@@ -1,0 +1,41 @@
+{  "product_id": "BALDOR_M2513T",
+  "name": "15 HP Three Phase Motor",
+  "description": "Heavy-duty three-phase motor designed for demanding industrial applications with robust construction.",
+  "specifications": {
+    "Horsepower": "15 HP",
+    "RPM": "1765",
+    "Voltage": "208-230/460V",
+    "Frame": "254T",
+    "Mounting": "Foot Mounted",
+    "Enclosure": "TEFC",
+    "Efficiency": "92.4%",
+    "Service Factor": "1.15"
+  },
+  "bom": [
+    {
+      "part_number": "ST-003",
+      "description": "Heavy duty stator 15HP",
+      "quantity": 1
+    },
+    {
+      "part_number": "RT-003",
+      "description": "Cast iron rotor 254T",
+      "quantity": 1
+    },
+    {
+      "part_number": "FB-254T",
+      "description": "Fan blade assembly",
+      "quantity": 1
+    },
+    {
+      "part_number": "FC-254T",
+      "description": "Fan cover 254T",
+      "quantity": 1
+    }
+  ],
+  "assets": {
+    "manual": "assets/BALDOR_M2513T/manual.pdf",
+    "image_main": "assets/BALDOR_M2513T/image_main.jpg",
+    "wiring_diagram": "assets/BALDOR_M2513T/wiring_diagram.pdf"
+  }
+}

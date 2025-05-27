@@ -1,0 +1,69 @@
+{  "product_id": "BALDOR_M3546T",
+  "name": "3 HP General Purpose Motor - 1800 RPM",
+  "description": "TEFC (Totally Enclosed Fan Cooled) motor designed for general industrial applications with high efficiency and reliability standards.",
+  "specifications": {
+    "Horsepower": "3 HP",
+    "RPM": "1800",
+    "Voltage": "208-230/460V",
+    "Frame": "182T",
+    "Mounting": "Foot Mounted",
+    "Enclosure": "TEFC",
+    "Efficiency": "89.5%",
+    "Service Factor": "1.15",
+    "Insulation Class": "F",
+    "Bearing Type": "Ball",
+    "Weight": "65 lbs"
+  },
+  "bom": [
+    {
+      "part_number": "ST-001",
+      "description": "Main stator with windings",
+      "quantity": 1
+    },
+    {
+      "part_number": "RT-001",
+      "description": "Aluminum rotor",
+      "quantity": 1
+    },
+    {
+      "part_number": "EB-DE",
+      "description": "Cast iron end bell - Drive End",
+      "quantity": 1
+    },
+    {
+      "part_number": "EB-ODE",
+      "description": "Cast iron end bell - Opposite Drive End",
+      "quantity": 1
+    },
+    {
+      "part_number": "BR-6206",
+      "description": "6206 Ball Bearing - Drive End",
+      "quantity": 1
+    },
+    {
+      "part_number": "BR-6205",
+      "description": "6205 Ball Bearing - ODE",
+      "quantity": 1
+    },
+    {
+      "part_number": "FAN-001",
+      "description": "Cooling fan assembly",
+      "quantity": 1
+    },
+    {
+      "part_number": "FC-001",
+      "description": "Protective fan cover",
+      "quantity": 1
+    }
+  ],
+  "assets": {
+    "manual": "assets/BALDOR_M3546T/manual.pdf",
+    "datasheet": "assets/BALDOR_M3546T/datasheet.pdf",
+    "cad_dwg": "assets/BALDOR_M3546T/cad_dwg.dwg",
+    "cad_step": "assets/BALDOR_M3546T/cad_step.step",
+    "image_main": "assets/BALDOR_M3546T/image_main.jpg",
+    "image_dimensions": "assets/BALDOR_M3546T/image_dimensions.jpg",
+    "certificate_ul": "assets/BALDOR_M3546T/certificate_ul.pdf",
+    "wiring_diagram": "assets/BALDOR_M3546T/wiring_diagram.pdf"
+  }
+}
