@@ -29,3 +29,18 @@ def test_get_file_extension_extensionless_cad():
     url = 'https://example.com/assets/cad/model'
     assert get_file_extension(url) == '.dwg'
 
+
+
+
+def test_get_file_extension_extensionless_image():
+    url = 'https://example.com/view/image'
+    assert get_file_extension(url) == '.jpg'
+
+
+def test_get_file_extension_unknown_returns_bin():
+    url = 'https://example.com/downloads/unknown'
+    assert get_file_extension(url) == '.bin'
+
+
+def test_sanitize_filename_empty_returns_unnamed():
+    assert sanitize_filename('') == 'unnamed'
