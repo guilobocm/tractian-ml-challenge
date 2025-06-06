@@ -127,7 +127,7 @@ The scraper is configured to extract 12 products (within the 10-15 range specifi
 
 ### Testes
 ```bash
-python test_scraper.py
+pytest
 ```
 
 ## Architecture
@@ -218,7 +218,7 @@ src/
 └── downloader.py    # Asset downloads
 
 tests/
-├── test_scraper.py  # Basic functionality tests
+├── test_downloader.py  # Unit tests
 └── demo_output.py   # Output demonstration
 
 output/               # Generated during execution
