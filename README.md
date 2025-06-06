@@ -112,7 +112,7 @@ pip install -r requirements.txt
 ### Basic Usage
 ```bash
 # Run the complete scraping pipeline
-python main.py
+python src/main.py
 ```
 
 ### Configuration
@@ -124,11 +124,6 @@ The scraper is configured to extract 12 products (within the 10-15 range specifi
 - **Logs**: Console output with detailed progress and error information
 
 **Note**: As per TRACTIAN instructions, extracted data files are not included in this repository. They are provided separately as a compressed file in the submission email.
-
-### Testes
-```bash
-pytest
-```
 
 ## Architecture
 
@@ -216,9 +211,6 @@ src/
 ├── scraper.py       # URL extraction
 ├── parser.py        # Page parsing
 └── downloader.py    # Asset downloads
-
-tests/
-├── test_downloader.py  # Unit tests
 └── demo_output.py   # Output demonstration
 
 output/               # Generated during execution

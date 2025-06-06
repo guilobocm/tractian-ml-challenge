@@ -89,7 +89,7 @@ async def download_assets(product_id, assets, output_dir):
                 continue
                 
             # Determina a extensão do arquivo
-            file_extension = get_file_extension(url)
+            file_extension = get_file_extension(url, asset_name)
             safe_asset_name = sanitize_filename(asset_name)
             save_path = os.path.join(product_dir, f"{safe_asset_name}{file_extension}")
             
@@ -116,21 +116,28 @@ async def download_assets(product_id, assets, output_dir):
         else:
             logging.warning(f"Nenhuma tarefa de download criada para {product_id}")
 
-def get_file_extension(url):
-    """
-    Extrai a extensão do arquivo da URL de forma inteligente
+def get_file_extension(url, asset_type):
+    """Return the file extension for an asset URL.
+
+    Parameters
+    ----------
+    url : str
+        Download URL for the asset.
+    asset_type : str
+        Key representing the asset type (e.g. ``manual`` or ``cad``).
+
+    If the URL already contains a file extension, it is returned. Otherwise a
+    common extension is chosen based on ``asset_type``. If the type is unknown,
+    ``.bin`` is returned.
     """
     # Remove parâmetros da query string
     url_path = urlparse(url).path
-    url_path = unquote(url_path)  # Decodifica URL encoding
-    
-    # Tenta extrair extensão do caminho
+    url_path = unquote(url_path)
+
+    # Tenta extrair a extensão diretamente da URL
     _, ext = os.path.splitext(url_path)
-    
-    if ext and len(ext) <= 5:  # Extensão válida (.pdf, .dwg, etc.)
+    if ext and len(ext) <= 5:
         return ext.lower()
-    
-    # Extensões comuns baseadas em palavras-chave
     common_extensions = {
         'manual': '.pdf',
         'cad': '.dwg',
@@ -138,14 +145,6 @@ def get_file_extension(url):
         'datasheet': '.pdf',
         'certificate': '.pdf',
     }
-
-    lower_url = (url_path + urlparse(url).query).lower()
-    for key, default_ext in common_extensions.items():
-        if key in lower_url:
-            return default_ext
-
-    # Se não conseguiu determinar, usa .bin como padrão
-    return '.bin'
 
 def sanitize_filename(filename):
     """

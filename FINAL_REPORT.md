@@ -38,7 +38,7 @@ TRACTIAN/
 │       └── {PRODUCT_ID}/  # Per-product asset folders
 ├── pyproject.toml         # UV configuration
 ├── README.md             # Documentation
-└── demo_mode.py          # Sample output generator
+└── create_demo_data.py   # Sample output generator
 ```
 
 ---
@@ -133,7 +133,7 @@ uv run python src/main.py
 
 ### **Demo Mode** (Sample Output)
 ```bash
-uv run python demo_mode.py
+uv run python create_demo_data.py
 ```
 
 ---
