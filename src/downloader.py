@@ -130,15 +130,20 @@ def get_file_extension(url):
     if ext and len(ext) <= 5:  # Extensão válida (.pdf, .dwg, etc.)
         return ext.lower()
     
-    # Extensões comuns baseadas no tipo de asset
+    # Extensões comuns baseadas em palavras-chave
     common_extensions = {
         'manual': '.pdf',
         'cad': '.dwg',
         'image': '.jpg',
         'datasheet': '.pdf',
-        'certificate': '.pdf'
+        'certificate': '.pdf',
     }
-    
+
+    lower_url = (url_path + urlparse(url).query).lower()
+    for key, default_ext in common_extensions.items():
+        if key in lower_url:
+            return default_ext
+
     # Se não conseguiu determinar, usa .bin como padrão
     return '.bin'
 
