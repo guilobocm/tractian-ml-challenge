@@ -67,7 +67,7 @@ This output was created by running the complete scraping pipeline:
 
 ```bash
 # From the GitHub repository
-python main.py
+python src/main.py
 ```
 
 The pipeline:
